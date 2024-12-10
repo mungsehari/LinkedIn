@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: hari0412
+      MYSQL_DATABASE: linkedin
+    ports:
+      - "3305:3306"
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - '1025:1025'
+      - '8025:8025'
